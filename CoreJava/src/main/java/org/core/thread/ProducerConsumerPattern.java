@@ -34,7 +34,6 @@ class Producer implements Runnable {
 		this.startPoint = startPoint;
 	}
 
-	@Override
 	public void run() {
 		for (int i = startPoint; i < startPoint+10; i++) {
 			try {
@@ -58,7 +57,6 @@ class Consumer implements Runnable {
 		this.sharedQueue = sharedQueue;
 	}
 
-	@Override
 	public void run() {
 		while (true) {
 			try {
